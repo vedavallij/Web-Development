@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<title> Vita-Prose using Grid </title>
+<style>
+    * {
+        box-sizing: border-box;
+    }
+
+    html,
+    body {
+        margin: 0;
+        padding: 0;
+        height: 100%;
+    }
+
+    .header {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto auto;
+        background-color: rgb(14, 66, 103);
+        color: white;
+        margin: 0;
+    }
+
+    .main-nav a {
+        color: white;
+        font-size: 17px;
+        text-decoration: none;
+        display: inline-block;
+        margin: 20px 0px 0px 30px;
+    }
+
+    .main-nav a:hover {
+        transform: translateY(-5px);
+    }
+
+    .main-nav a::after {
+        content: '';
+        position: absolute;
+        left: 0;
+        bottom: -4px;
+        width: 100%;
+        height: 2px;
+        background: #fff;
+        border-radius: 2px;
+        transform: scaleX(0);
+        transition: transform .5s;
+    }
+
+    .main-nav a:hover::after {
+        transform: scaleX(1);
+    }
+
+    h1 {
+        display: grid;
+        place-content: center;
+        place-items: center;
+        margin-block-end: 2px;
+        margin-top: 40px;
+        font-size: 35px;
+    }
+
+    h2 {
+        display: grid;
+        place-content: center;
+        place-items: center;
+        color: gold;
+        padding-bottom: 30px;
+        margin-block-start: 0;
+    }
+
+
+    .blog-box {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 50px;
+        padding: 100px;
+        padding-right: 60px;
+        padding-left: 120px;
+    }
+
+    .blog-card {
+        width: 350px;
+        border: 2px solid rgb(202, 195, 195);
+        border-radius: 10px;
+        overflow: hidden;
+    }
+
+    .blog-img {
+        width: 100%;
+        height: auto;
+    }
+
+    .blog-content h3 a {
+        font-size: 20px;
+        color: black;
+        display: grid;
+        place-content: center;
+        place-items: center;
+    }
+
+    .blog-content p {
+        font-size: 14px;
+        color: #777;
+        text-align: left;
+        padding-left: 20px;
+    }
+
+    .footer {
+        background-color: rgb(14, 66, 103);
+        color: white;
+        display: grid;
+        grid-template-columns: 1fr auto;
+        place-items: start;
+        padding: .3rem;
+    }
+
+    .footer-content {
+        font-size: 16px;
+        margin-left: 10px;
+    }
+
+    .footer-icons {
+        display: flex;
+        gap: 16px;
+        margin-right: 15px;
+    }
+
+    @media screen and (max-width: 768px) {
+        .blog-box {
+            grid-template-columns: 1fr 1fr;
+            padding: 10px;
+        }
+    }
+
+    @media screen and (max-width: 500px) {
+        .blog-box {
+            grid-template-columns: 1fr;
+            padding: 10px;
+        }
+    }
+
+</style>
+
+<body>
+    <div class="container">
+        <header class="header">
+            <nav class="main-nav">
+                <a href="Task2.html"> Home </a>
+                <a href="Task2.html"> About </a>
+            </nav>
+            <h1> Reflection of Life </h1>
+            <h2> Let a brook remind you: Ambition breaks through every block </h2>
+        </header>
+
+        <div class="blog-box">
+            <div class="blog-card">
+                <img src="Music.jpg" alt="Music" class="blog-img">
+                <div class="blog-content">
+                    <h3> <a href="File1.html"> Music in Life </a> </h3>
+                    <p> 28 Sep 2024 &bull; 1 min read </p>
+                </div>
+            </div>
+
+            <div class="blog-card">
+                <img src="Music.jpg" alt="Music" class="blog-img">
+                <div class="blog-content">
+                    <h3> <a href="File1.html"> Music in Life </a> </h3>
+                    <p> 28 Sep 2024 &bull; 1 min read </p>
+                </div>
+            </div>
+
+            <div class="blog-card">
+                <img src="Music.jpg" alt="Music" class="blog-img">
+                <div class="blog-content">
+                    <h3> <a href="File1.html"> Music in Life </a> </h3>
+                    <p> 28 Sep 2024 &bull; 1 min read </p>
+                </div>
+            </div>
+
+            <div class="blog-card">
+                <img src="Music.jpg" alt="Music" class="blog-img">
+                <div class="blog-content">
+                    <h3> <a href="File1.html"> Music in Life </a> </h3>
+                    <p> 28 Sep 2024 &bull; 1 min read </p>
+                </div>
+            </div>
+
+            <div class="blog-card">
+                <img src="Music.jpg" alt="Music" class="blog-img">
+                <div class="blog-content">
+                    <h3> <a href="File1.html"> Music in Life </a> </h3>
+                    <p> 28 Sep 2024 &bull; 1 min read </p>
+                </div>
+            </div>
+
+            <div class="blog-card">
+                <img src="Music.jpg" alt="Music" class="blog-img">
+                <div class="blog-content">
+                    <h3> <a href="File1.html"> Music in Life </a> </h3>
+                    <p> 28 Sep 2024 &bull; 1 min read </p>
+                </div>
+            </div>
+
+        </div>
+
+        <footer class="footer">
+            <div class="footer-content"> &copy; Vedavalli J </div>
+            <div class="footer-icons">
+                <a href="https://www.linkedin.com/in/vedavalli-j"><i class="fa-brands fa-linkedin-in"
+                        style="color: white;"></i></a>
+                <a href="https://github.com/vedavallij"><i class="fa-brands fa-github" style="color: white;"></i></a>
+                <a href="mailto:vedavalli7j@gmail.com"><i class="fa-regular fa-envelope" style="color: white;"></i></a>
+            </div>
+        </footer>
+
+    </div>
+</body>
+
+</html>
