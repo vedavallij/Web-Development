@@ -66,6 +66,7 @@
             border: 1px solid #8c8c8c;
             width: 100%;
             font-size: 15px;
+            color: white;
         }
 
         button {
@@ -168,54 +169,53 @@
         footer {
             background-color: black;
             color: white;
-            text-align: center;
-            padding: 250px 30px 80px 30px;
-        }
-
-        footer p {
-            font-size: 16px;
-            color: #FFFFFFB3;
             text-align: left;
-            margin-left: 185px;
+            padding:250px 30px 80px 30px;
+
+            p {
+                color: #FFFFFFB3;
+                font-size: 16px;
+                padding-left: 180px;
+
+                a{
+                    text-decoration: none;
+                    color: #FFFFFFB3;
+                }
+                
+            }
+        
         }
 
-        footer p a {
-            text-decoration: none;
-            color: #FFFFFFB3;
-        }
-
-        footer p a:hover {
+        footer p a:hover{
             text-decoration: underline;
         }
 
-        .footer-links {
+        .footer-links{
             list-style: none;
-            display: inline-flex;
-            justify-content: center;
+            display: flex;
             flex-wrap: wrap;
-
-            margin-top: 50px;
-            margin-bottom: 50px;
-
-            a {
-                margin: 60px;
+            padding-left: 180px;
+            margin: 20px 0px 10px 0px;
+            
+            a{
                 color: #FFFFFFB3;
+                font-size: 14px;  
             }
-        }
 
-        .footer-links li {
-            font-size: 14px;
+            li{
+            flex-basis: 22%;
+            margin-bottom: 20px;     
+            }
         }
 
         .select-language {
             display: block;
             text-align: left;
             padding: 10px 20px 10px 20px;
-            margin-left: 185px;
+            margin-left: 180px;
             border-radius: 6px;
-            font-size: 16px;
+            font-size: 15px;
         }
-
     </style>
 </head>
 
